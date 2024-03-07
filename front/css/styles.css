@@ -1,13 +1,13 @@
 @font-face{
     font-family: 'Cabin';
-    src: url(/front/Fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+    src: url(/front/assets/Fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
     font-size: large;
     font-weight: bold;
 }
 
 @font-face{
     font-family: 'Raleway';
-    src: url(/front/Fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(/front/assets/Fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf);
     font-size: normal;
     font-weight: 200 italic;
 }
@@ -42,6 +42,7 @@ header{
             justify-content: center;
             text-align: center;
             margin: 10px;
+            padding: 40px;
         }
 
         #containerNav a{
@@ -81,8 +82,8 @@ body{
            border: 1px solid black;
            border-radius: 8px;
             height: 350px;
-            width: 300px;
-            
+            width: 280px;
+            padding: 20px;
         }
 
         .peliculas h3{
