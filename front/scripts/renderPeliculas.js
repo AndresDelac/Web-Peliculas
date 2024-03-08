@@ -6,7 +6,7 @@ function renderPeliculas(peli) {
     tarjetaPeli.classList.add('peliculas');
     tarjetaPeli.innerHTML = `
     
-    <img src="${peli.poster}" alt="peli.title">
+    <img src="${peli.poster}">
     <h3>${peli.title} (${peli.year})</h3>
     <p>Dirigida por: ${peli.director}</p>
     <p>Duracion: ${peli.duration}</p>
