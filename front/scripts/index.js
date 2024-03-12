@@ -1,10 +1,13 @@
+const axios = require('axios')
+
 const renderPeliculas = require('./renderPeliculas')
 
+const getMovie = () => {
+    axios.get('https://students-api.up.railway.app/movies')
+    .then(({data})=> data.forEach(renderPeliculas))
+    .catch((error)=> console.log(error.message));
+}
 
-fetch('https://students-api.2.us-1.fl0.io/movies')
-    .then(response => response.json())
-    .then(data => data.forEach(renderPeliculas))
-    .catch(error => console.error('Error fetching movies:', error));
+getMovie();
 
-    
 
