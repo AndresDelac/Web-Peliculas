@@ -4,7 +4,7 @@ const sectionContenedorP = document.getElementById('contenedorP');
 function renderPeliculas(peli) {
     const elemetoPeli = document.createElement('article');
     elemetoPeli.classList.add('peliculas');
-
+    
     elemetoPeli.innerHTML = `
         <img src="${peli.poster}" alt="${peli.title}">
         <div class="info-adicional">
@@ -15,14 +15,19 @@ function renderPeliculas(peli) {
             <p>${peli.rate}</p>
         </div>
     `;
-    
+
     elemetoPeli.addEventListener('mouseover', function() {
-        sectionContenedorP.style.backgroundImage = 'url("./assets/Imagenes/BCG star wars.jpg")';
+        sectionContenedorP.style.backgroundImage = `url(${peli.imgFondo})`;
+        sectionContenedorP.style.backgroundRepeat = 'no-repeat';
+        sectionContenedorP.style.backgroundSize = 'cover';
+    });
+    
+    elemetoPeli.addEventListener('mouseout', function() {
+        sectionContenedorP.style.backgroundImage = 'url("./assets/Imagenes/GettyImages-898266112.jpg")';
+        sectionContenedorP.style.backgroundRepeat = 'no-repeat';
+        sectionContenedorP.style.backgroundSize = 'cover';
     });
 
-    elemetoPeli.addEventListener('mouseout', function() {
-        sectionContenedorP.style.backgroundImage = 'url("./assets/Imagenes/Fondo Cabezera.png")';
-    });
     
     contenedorPeliculas.appendChild(elemetoPeli);
     

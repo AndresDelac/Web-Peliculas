@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>PROYECTO M2</title>
+</head>
+<body>
+  <header class="p-4">
+<style>*{margin: 0; padding: 0;}</style>
+    <nav class="navbar navbar-expand-lg bg-dark rounded">
+        <div class="container-fluid ">
+          <a class="navbar-brand fs-1 me-5 text-light" href="../index.html">PELISMAX</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link fs-4 me-2 text-light" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4 me-2 text-light" href="./sobreNosotros.html">SOBRE NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4 active me-2 text-light" href="./formularioPelis.html">FORMULARIO PELIS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4  me-2 text-light" href="./esteProyecto.html">ESTE PROYECTO</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+        <main class="">
+            <section class="p-3 text-white "> <style>section{background-image: url(../assets/Imagenes/Palomitas-fondo-pelicula_23-2149876030.jpg); background-size: cover; background-repeat: no-repeat;}</style>
+
+
+
+
+
+              <!-- ESTE ES EL NORMAL -->
+              <section class="formulario-pelicula">
+
+              <form action="" id="form-nuevaPelicula">
+              <h2>Agrega tu pelicula favorita</h2>
+              <label for="title">Titulo</label>
+              <input type="text"  id="titulo"  class="campos" required>
+
+              <label for="year">Año de estreno</label>
+              <input type="number" min="1800" max="2025"  id="Año" class="campos" required>
+
+              <label for="director">Director</label>
+              <input type="text"  id="director" class="campos" required>
+
+              <label for="duration">Duracion</label>
+              <input type="text"  id="duracion" class="campos" required>
+
+              <label for="generos">Genero:</label>
+              <div id="options"></div>
+
+              <label for="rate">Puntuacion</label>
+              <input type="number"  id="puntuacion"  min="1" max="10" class="campos" required>
+
+              <label for="poster">Imagen</label>
+              <input type="text"  id="poster" class="campos" required>
+
+              <label for="imgFondo">Imagen de fondo</label>
+              <input type="text"  id="imgFondo" class="campos" required>
+
+              <button type="submit" id="btn-enviar" class="btn btn-success">Enviar formulario</button>
+              <button type="button" id="reset" class="btn btn-danger">Limpiar formulario</button>
+
+            </form>
+            </section>
+              <!-- AQUI TERMINA EL NORMAL -->
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        </section>
+        </main>
+
+<script src="../public/form.js"></script>
+    </body>
+</html>

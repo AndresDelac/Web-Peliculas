@@ -8,87 +8,103 @@
 </head>
 <body>
     <style>body{
-        background-image: url(../assets/Imagenes/fondoNegro-Blanco.png);
+        background-image: url(../assets/Imagenes/ciudad.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         color: aliceblue;
     }</style>
-    <header class="p-3 bg-black text-light">
-    <h1 class="fs-1 mb-1 fw-bold">PROYECTO M2</h1>
-    <h2 class="text-center fs-1 mb-1">PELISMAX</h2>
-    
-    <div class="container text-center">
+    <header class="p-4">
 
-        <div class="row p-3 mb-5 bg-dark">
-        <a href="../index.html" class="col p-3 fs-5 link-light bg-success badge rounded-pill text-bg-success mx-1 link-underline-opacity-0">HOME</a> 
-        <a href="./sobreNosotros.html" class="col p-3 fs-5 link-light bg-success badge rounded-pill text-bg-success mx-1 link-underline-opacity-0 ">SOBRE NOSOTROS</a>
-        <a href="./ultimasNoticias.html" class="col p-3 fs-5 link-light bg-success badge rounded-pill text-bg-success mx-1 link-underline-opacity-0 ">ULTIMAS NOTICIAS</a>
-        <a href="../Pages/esteProyecto.html" class="col p-3 fs-5 link-light bg-success badge rounded-pill text-bg-success mx-1 link-underline-opacity-0">ESTE PROYECTO</a>
-        </div>
-      </div>
-    </header>
+      <nav class="navbar navbar-expand-lg bg-primary-subtle rounded">
+          <div class="container-fluid ">
+            <a class="navbar-brand fs-1 me-5" href="../index.html">PELISMAX</a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link fs-4 me-2" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fs-4 me-2" href="">SOBRE NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 me-2" href="./formularioPelis.html">FORMULARIO PELIS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 me-2" href="./esteProyecto.html">ESTE PROYECTO</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
         <main>
-            <section class="mx-auto mt-5 mb-5 justify-content-center card text-bg-dark mb-3"> <style>section{ max-width: 100rem;}</style>
+            <section id="sec-1" class= "card mx-auto mb-5 mt-5 p-3 card border-light text-light"> <style>#sec-1{ max-width: 100rem; background: transparent;}</style>
 
-            <h3 class="ms-3 mt-5 fs-2 card-header">Somos PELISMAX</h3>
-            <p class="mt-3 mx-3 fs-4 card-text">!HOLA cansado de no poder ver tus series favoritas por no tener ni un peso encima, cansado de que tus amigos siempre esten hablando de las peliculas y series que tu no puedes ver por pobre, cansado de ser pobre (yo tambien), bueno lo de pobre ni modo ahi ya tu, PERO tranquilo que con PELISMAX ya no tendras que estar pagando por ver lo que te gusta. Peliculas, series, documentales, todo esto a tu disposicion, aqui en PELISMAX solo tienes que suscribirte y tranquilo por que es GRATIS, ahora diras para que carajos quieres que me suscriba si es gratis.     CALLATE dejame te termino de explicar, en esta pagina no solo encontraras todo el catalogo de todas las peliculas y series, sino que tambien tendras acceso para comprar entradas para cuando salgas de la pobreza, y no solo eso si no que tambien hacemos sorteos semanalmente para rifar entradas para cine cuando salgan nuevas a cartelera. Y pues OBVIAMENTE para participar en estos sorteos semanales te tiene que suscribir duh. Bueno sin nada mas que mencionar eso somos PELISMAX disfruta de la pagina  :)
-            </p>
-        </section>
-        <section class="mx-auto">
-        <div class="card-group">
-            <div class="card border-info text-bg-dark">
-              <img src="../assets/Imagenes/retro-science-fiction-space-exploration-260nw-2293165001.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title fs-3">Ciencia-Ficcion</h5>
-                <p class="card-text fs-4">La ciencia ficción es un género narrativo que sitúa la acción en unas coordenadas espacio-temporales imaginarias y diferentes a las nuestras, y que especula racionalmente sobre posibles avances científicos o sociales y su impacto en la sociedad.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                <a href="#" class="btn btn-primary">Button</a>
-              </div>
-            </div>
+            <h3 class="ms-3 mt-5 fs-2 card-header">SOMOS PELISMAX</h3><style>h3 {font-family: 'Cabin'; font-weight: 700;}</style>
 
-            <div class="card border-info text-bg-dark">
-              <img src="" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Accion</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
 
-            <div class="card border-info text-bg-dark">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        
-            <div class="card border-info text-bg-dark">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-          
+            <p id="principal" class="mt-3 mx-3 fs-4 card-text">!HOLA cansado de no poder ver tus series favoritas por no tener ni un peso encima, cansado de que tus amigos siempre esten hablando de las peliculas y series que tu no puedes ver por pobre, cansado de ser pobre (yo tambien), bueno lo de pobre ni modo ahi ya tu, PERO tranquilo que con PELISMAX ya no tendras que estar pagando por ver lo que te gusta. Peliculas, series, documentales, todo esto a tu disposicion, aqui en PELISMAX solo tienes que suscribirte y tranquilo por que es GRATIS, ahora diras para que carajos quieres que me suscriba si es gratis.     CALLATE dejame te termino de explicar, en esta pagina no solo encontraras todo el catalogo de todas las peliculas y series, sino que tambien tendras acceso para comprar entradas para cuando salgas de la pobreza, y no solo eso si no que tambien hacemos sorteos semanalmente para rifar entradas para cine cuando salgan nuevas a cartelera. Y pues OBVIAMENTE para participar en estos sorteos semanales te tiene que suscribir duh. Bueno sin nada mas que mencionar eso somos PELISMAX disfruta de la pagina  :)
+            <!-- </p> ><style>#principal {font-family: 'Raleway'; font-weight: 200; }</style> -->
+
+
         </section>
 
 
 
+        <section id="sec-2" class="mx-auto mb-5"> <style> #sec-2{ max-width: 75rem;} </style>
+          <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+            <div class="col">
+              <div class="card">
+                <img src="../assets/Imagenes/las-mejores-novelas-de-ciencia-ficcion-que-no-te-puedes-perder-655x368.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fs-2">Ciencia-Ficcion</h5>
 
-        <div class="card border-info text-bg-dark mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h5 class="card-title">Info card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../assets/Imagenes/1366_2000.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fs-2">Accion</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../assets/Imagenes/Imagen-comedia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fs-2">Comedia</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../assets/Imagenes/comediasssssR.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fs-2">Comedia Romantica</h5>
+
+                </div>
+              </div>
             </div>
           </div>
+        </section>
+
+
+
 
 
 
